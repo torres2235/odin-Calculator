@@ -1,0 +1,38 @@
+#frame {
+    background-color: lightgray;
+    height: 400px;
+    width: 400px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+button {
+    height: 50px;
+    width: 120px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#display {
+    background-color: white;
+    font-size: 40px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin: 10px;
+
+}

@@ -37,3 +37,22 @@ function operate(x, y, op) {
             break;
     }
 };
+
+
+let input = ''; //hold our string
+
+const buttons = document.querySelectorAll('button');
+buttons.forEach((button) => {
+    button.addEventListener('click', () => { //updates our string with the number we pressed
+        if(input.length < 19) {
+            input = input + button.id;
+            document.querySelector('#display').textContent = input;
+        }
+        if(button.id == 'clear') {//clears our display and our "input" string
+            input = '';
+            document.querySelector('#display').textContent = '0';
+        }
+        
+    });
+});
+    
