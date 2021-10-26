@@ -86,8 +86,6 @@ buttons.forEach((button) => {
                 x = total;
                 console.log(x);
             }
-
-
         }
     });
 });
