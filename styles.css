@@ -2,6 +2,8 @@
     background-color: lightgray;
     height: 400px;
     width: 400px;
+    border: 1px solid black;
+    border-radius: 8px;
 
     display: flex;
     flex-direction: column;
@@ -29,6 +31,8 @@ body {
 #display {
     background-color: white;
     font-size: 40px;
+    border: 1px solid black;
+    border-radius: 8px;
 
     display: flex;
     flex-direction: row;
