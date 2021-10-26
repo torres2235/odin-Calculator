@@ -62,7 +62,9 @@ buttons.forEach((button) => {
         }
         
         if(button.id == 'add' || button.id == 'sub' || button.id == 'multiply' || button.id == 'divide') {
-            x = parseInt(input);
+            if(!x) {
+                x = parseInt(input);
+            }
             op = String(button.id);
             //console.log(x);
             //console.log(op);
@@ -82,6 +84,7 @@ buttons.forEach((button) => {
                 total = operate(x, y, op);
                 document.querySelector('#display').textContent = total;
                 x = total;
+                console.log(x);
             }
 
 
